@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* body{
+   transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  */
+  .flecha{
+    border-color: #1a202c;
+  }
+
+  .dark-mode {
+    background-color: #1a202c;
+    color: #ffffff;
+    .gmail{
+      color: #ffffffa4;
+    }
+    .negro{
+      color: #1a202c;
+    }
+    .flecha{
+      border-color: #ffffff;
+    }
+  }
+  
+  .product-detail{
+    width: 360px;
+    height: calc(100vh - 68px);
+    top: 68px;
+  }
+  .checkout-side-menu{
+    width: 360px;
+    height: calc(100vh - 68px);
+    top: 68px;
+  }
+  .hide-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    width: 12px;
+    
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: 3px solid transparent;
+    
+  }
+  
+@media screen and (max-width: 1024px) {
+  .navbar{
+    display: flex;
+    padding:0.5rem;
+  }
+  .navbar-menu {
+    display: flex;
+    flex-direction:column; 
+    align-items: start;
+  }
+
+  .navbar-menu-2 {
+      display: flex;
+      flex-direction:column; 
+      align-items: end;
+      
+    }
+  .cards{
+    z-index: 10;
+    width: 50%;
+  }
+  .contenedor{
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+  }
+  .product-detail{
+    z-index: 10;
+    width: 300px;
+    height: 80vh ;
+    top: 100px;
+    right: 40px;
+  }
+  
+}
