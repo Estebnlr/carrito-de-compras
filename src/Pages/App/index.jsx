@@ -18,7 +18,7 @@ const AppRoutes = () => {
       { path: '/electronics', element: <Home /> },
       { path: '/furnitures', element: <Home /> },
       { path: '/toys', element: <Home /> },
-      { path: '/others', element: <Home /> },
+      { path: '/othes', element: <Home /> },
       { path: '/my-account', element: <MyAccount /> },
       { path: '/my-order', element: <MyOrder /> },
       { path: '/my-orders', element: <MyOrders /> },
@@ -34,9 +34,9 @@ const App = () => {
     return (
       <ShoppingCartProvider>
           <BrowserRouter>
-                <Navbar />
                 <AppRoutes />
-               < CheckoutSideMenu />
+                <Navbar />
+               <CheckoutSideMenu />
             </BrowserRouter>
       </ShoppingCartProvider>
   )

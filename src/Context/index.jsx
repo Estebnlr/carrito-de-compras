@@ -38,9 +38,12 @@ export const ShoppingCartProvider = ({children}) => {
   useEffect(() => {
     fetch('https://api.escuelajs.co/api/v1/products')
       .then(response => response.json())
-      .then(data => setItems(data))
-  }, [])
-
+      .then(data => {
+        setItems(data);
+        console.log('Productos recibidos:', data);
+      })
+      .catch(error => console.error('Error al obtener productos:', error));
+  }, []);
   const filteredItemsByTitle = (items, searchByTitle) => {
     return items?.filter(item => item.title.toLowerCase().includes(searchByTitle.toLowerCase()))
   }

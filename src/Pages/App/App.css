@@ -17,6 +17,9 @@
     .gmail{
       color: #ffffffa4;
     }
+    .oscuro{
+      background-color: #1a202c;
+    }
     .negro{
       color: #1a202c;
     }
@@ -69,7 +72,6 @@
       
     }
   .cards{
-    z-index: 10;
     width: 50%;
   }
   .contenedor{
@@ -78,7 +80,6 @@
     align-items: center;
   }
   .product-detail{
-    z-index: 10;
     width: 300px;
     height: 80vh ;
     top: 100px;
